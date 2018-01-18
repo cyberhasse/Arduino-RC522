@@ -8,8 +8,12 @@ with esp8266 from anywhere in the world.
 Added this under void setup()
 
 // This makes the LCD display work with longer wires but some of my nanos v3 show strange behaviour
+
+
 Wire.begin ();
 TWBR = 152;
+
+
 // In the case of I2C make sure you have pull-up resistors on SDA and SCL in order to get a clean signal.
 // 4.7 k is a reasonable value to try (for both of them) with the other ends connected to +5 V
 // I didn't need to do that.. time will tell :)
