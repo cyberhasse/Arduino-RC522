@@ -1,0 +1,11 @@
+#!/bin/sh
+# Simple script to read a full arduino backup
+
+PORT=/dev/ttyUSB0
+
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U flash:r:backup_flash.hex:i
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U eeprom:r:backup_eeprom.hex:i
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U hfuse:r:backup_hfuse.hex:i
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U lfuse:r:backup_lfuse.hex:i
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U efuse:r:backup_efuse.hex:i
+ls -lah *.hex

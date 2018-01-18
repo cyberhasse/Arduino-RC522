@@ -1,0 +1,10 @@
+#!/bin/sh
+# Simple bash script to restore an arduino
+
+PORT=/dev/ttyUSB0
+
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U flash:w:backup_flash.hex
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U eeprom:w:backup_eeprom.hex
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U hfuse:w:backup_hfuse.hex
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U lfuse:w:backup_lfuse.hex
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U efuse:w:backup_efuse.hex

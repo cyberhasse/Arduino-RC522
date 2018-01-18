@@ -1,0 +1,7 @@
+#!/bin/sh
+# Simple bash script to clone arduino eeprom
+
+PORT=/dev/ttyUSB0
+
+avrdude -v -patmega328p -carduino -P/dev/$PORT -b57600 -U eeprom:r:backup_eeprom.hex:i
+

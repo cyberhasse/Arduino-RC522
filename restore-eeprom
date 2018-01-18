@@ -1,0 +1,6 @@
+#!/bin/sh
+# Simple bash script to restore arduino eeprom
+
+PORT=/dev/ttyUSB0
+
+avrdude -v -patmega328p -carduino -P$PORT -b57600 -U eeprom:w:backup_eeprom.hex
