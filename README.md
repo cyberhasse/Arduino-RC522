@@ -18,7 +18,6 @@ TWBR = 152;
 // 4.7 k is a reasonable value to try (for both of them) with the other ends connected to +5 V
 // I didn't need to do that.. time will tell :)
 
-
 Note!
 This is just for storing my stuff and not really a project :)
 Code is originally from:
