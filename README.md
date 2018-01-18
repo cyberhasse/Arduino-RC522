@@ -11,6 +11,7 @@ Added this under void setup()
 
 
 Wire.begin ();
+
 TWBR = 152;
 
 
