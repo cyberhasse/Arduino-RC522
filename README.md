@@ -17,5 +17,6 @@ Added this under void setup()
 
 Note!
 This is just for storing my stuff and not really a project :)
-Code is originally from: https://github.com/omersiar/RFID522-Door-Unlock
+Code is originally from:
+https://github.com/omersiar/RFID522-Door-Unlock
 
